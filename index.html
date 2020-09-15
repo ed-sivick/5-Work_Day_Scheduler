@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BootstrapCDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- stylesheet for Font Awesome save icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Work Day Scheduler</title>
+</head>
+
+<body>
+    <!-- Using Bootstrap jumbotron for header -->
+    <header class="jumbotron">
+        <h1 class="appName display-4">Work Day Scheduler</h1>
+        <p class="appDesc lead">A simple calendar app for scheduling your work day</p>
+        <p class="todayDate appDesc lead"></p>
+    </header>
+    <main class="scheduler container">
+        <!-- Grid: Row 1 -->
+        <div class="row timeRow" data-time = "9">
+            <!-- Grid: Row 1, Col 1 (Schedule Hour) -->
+            <div class="col-2 col-lg-1 hour">9AM</div>
+            <!-- Grid: Row 1, Col 2 (Task-textarea input) -->
+            <textarea class="col-8 col-lg-10"></textarea>
+            <!-- Grid: Row 1, Col 3 (Save button/icon) -->
+            <button class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+                <i class="fas fa-save" style="font-size:30px"></i>
+            </button>
+        </div>
+        <!-- Grid: Row 2 with Row 1 column layout -->
+        <div class="row timeRow" data-time = "10">
+            <div class="col-2 col-lg-1 hour">10AM</div>
+            <textarea class="col-8 col-lg-10"></textarea>
+            <button class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+                <i class="fas fa-save" style="font-size:30px"></i>
+            </button>
+        </div>
+        <!-- Grid: Row 3 with Row 1 column layout -->
+        <div class="row timeRow" data-time = "11">
+            <div class="col-2 col-lg-1 hour">11AM</div>
+            <textarea class="col-8 col-lg-10"></textarea>
+            <button class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+                <i class="fas fa-save" style="font-size:30px"></i>
+            </button>
+        </div>
+        <!-- Grid: Row 4 with Row 1 column layout -->
+        <div class="row timeRow" data-time = "12">
+            <div class="col-2 col-lg-1 hour">12PM</div>
+            <textarea class="col-8 col-lg-10"></textarea>
+            <button class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+                <i class="fas fa-save" style="font-size:30px"></i>
+            </button>
+        </div>
+        <!-- Grid: Row 5 with Row 1 column layout-->
+        <div class="row timeRow" data-time = "13">
+            <div class="col-2 col-lg-1 hour">1PM</div>
+            <textarea class="col-8 col-lg-10"></textarea>
+            <button class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+                <i class="fas fa-save" style="font-size:30px"></i>
+            </button>
+        </div>
+        <!-- Grid: Row 6 with Row 1 column layout -->
+        <div class="row timeRow" data-time = "14">
+            <div class="col-2 col-lg-1 hour">2PM</div>
+            <textarea class="col-8 col-lg-10"></textarea>
+            <button class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+                <i class="fas fa-save" style="font-size:30px"></i>
+            </button>
+        </div>
+        <!-- Grid: Row 7 with Row 1 column layout -->
+        <div class="row timeRow" data-time = "15">
+            <div class="col-2 col-lg-1 hour">3PM</div>
+            <textarea class="col-8 col-lg-10"></textarea>
+            <button class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+                <i class="fas fa-save" style="font-size:30px"></i>
+            </button>
+        </div>
+        <!-- Grid: Row 8 with Row 1 column layout -->
+        <div class="row timeRow" data-time = "16">
+            <div class="col-2 col-lg-1 hour">4PM</div>
+            <textarea class="col-8 col-lg-10"></textarea>
+            <button class=" col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+                <i class="fas fa-save" style="font-size:30px"></i>
+            </button>
+        </div>
+        <!-- Grid: Row 9 with Row 1 column layout -->
+        <div class="btmDiv row timeRow" data-time = "17">
+            <div class="btmHour col-2 col-lg-1 hour">5PM</div>
+            <textarea class="col-8 col-lg-10"></textarea>
+            <button class="col-2 col-lg-1 btn btn-block saveBtn d-flex justify-content-center align-items-center">
+                <i class="fas fa-save" style="font-size:30px"></i>
+            </button>
+        </div>
+    </main>
+
+    <!-- sticky footer for Author and copyright-->
+    <footer class="footer">
+        <p class="p_foot">
+            Author: Ed Sivick - &copy; Copyright 2020
+        </p>
+    </footer>
+    <!-- Bootstrap jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- moment.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
