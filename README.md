@@ -8,7 +8,8 @@ ___
 The HTML file was built using primarily Bootstrap components. A **jumbotron** was used in the `header` of the code to provide a brief description of the app, and display the date provided by moment.js (https://momentjs.com/). The `main` element for the schedule was built using the Bootstrap grid system.  It consists of 9 rows, and each row has has three columns: **col-md-2**, **col-md-8**, and **col-md-2**.
 - the first column displays the associated time field (9AM - 5PM)
 - the second column displays the input textarea for adding events or tasks during that specific time field
-- the third column displays the save button field and icon from Font Awesome which includes a 30px font-size **save icon** with code snippet from Codesprogram (https://www.codesprogram.com/web-icon/font-awesome-save-icon)   
+- the third column displays the save button field and icon from Font Awesome which includes a 30px font-size **save icon** with code snippet from Codesprogram (https://www.codesprogram.com/web-icon/font-awesome-save-icon)
+   
 A sticky footer was added to display the Author and Copyright year.  
   
 ___
