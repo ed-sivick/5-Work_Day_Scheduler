@@ -14,7 +14,7 @@ $(document).ready(function () {
 
   // display date on jumbotron
   $todayDate.text(currentDate);
-  
+
   // starts the app by initially creating an empty array of object pairs
   function startScheduler() {
     // .each function iterates over the timeFields
@@ -35,23 +35,23 @@ $(document).ready(function () {
     localStorage.setItem("events", JSON.stringify(tasks));
   }
 
-// if local storage has no data, call startScheduler function
-startTimeFields();
-if (!localStorage.getItem("events")) {
-  startScheduler();
-}
-
-// use JSON parse to showScheduler items from local storage, and match tasks with the hour
-function showScheduler() {
-  tasks = localStorage.getItem("events");
-  tasks = JSON.parse(tasks);
-  for (var i = 0; i < tasks.length; i++) {
-    var itemText = tasks[i].taskItem;
-    var itemHour = tasks[i].hour;
-
-    $("[data-time = " + itemHour + "]").children("textarea").val(itemText);
+  // if local storage has no data, call startScheduler function
+  startTimeFields();
+  if (!localStorage.getItem("events")) {
+    startScheduler();
   }
-}
+
+  // use JSON parse to showScheduler items from local storage, and match tasks with the hour
+  function showScheduler() {
+    tasks = localStorage.getItem("events");
+    tasks = JSON.parse(tasks);
+    for (var i = 0; i < tasks.length; i++) {
+      var itemText = tasks[i].taskItem;
+      var itemHour = tasks[i].hour;
+
+      $("[data-time = " + itemHour + "]").children("textarea").val(itemText);
+    }
+  }
 
   //format CSS color styles depending on time of day
   function startTimeFields() {
@@ -68,7 +68,12 @@ function showScheduler() {
     });
   }
 
-// updates tasks with textarea input and associated hour in data-time div 
+  // call showScheduler to see data from local storage
+  showScheduler();
+  // identify when a save button is pressed on the scheduler
+  $mainDiv.on("click", "button", saveTasks);
+
+  // updates tasks with textarea input and associated hour in data-time div using JSON stringify 
   function saveTasks() {
     var $thisField = $(this).parent();
     var taskHour = $(this).parent().attr("data-time");
@@ -82,10 +87,5 @@ function showScheduler() {
     localStorage.setItem("events", JSON.stringify(tasks));
     showScheduler();
   }
-
-  // call showScheduler to see data from local storage
-  showScheduler();
-  // identifies when a save button is pressed on the scheduler
-  $mainDiv.on("click", "button", saveTasks);
 
 });
