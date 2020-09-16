@@ -27,26 +27,20 @@ This assignment was challenging, and I found myself having to use resources such
 
 ## Application Links and Images  
 **Links:**  
-Application link: (https://ed-sivick.github.io/4-Web-APIs/)  
-index.html code: (https://github.com/ed-sivick/4-Web-APIs/blob/master/index.html)  
-JavaScript.js code: (https://github.com/ed-sivick/4-Web-APIs/blob/master/assets/script.js)  
-style.css code: (https://github.com/ed-sivick/4-Web-APIs/blob/master/assets/style.css)
+Application link: (https://ed-sivick.github.io/5-Work_Day_Scheduler/)  
+index.html code: (https://github.com/ed-sivick/5-Work_Day_Scheduler/blob/master/index.html)  
+JavaScript.js code: (https://github.com/ed-sivick/5-Work_Day_Scheduler/blob/master/assets/script.js)  
+style.css code: (https://github.com/ed-sivick/5-Work_Day_Scheduler/blob/master/assets/style.css)
 
 **Application Image Examples:** Hover the mouse over each image for a brief description. 
 <p align="left">
-  <img src="assets/images/schedule_new.png" height="450" align="left" title="image of daily schedule showing future timeblocks with no tasks added" alt="image of daily schedule showing future timeblocks with no tasks added">
+  <img src="assets/images/schedule_new.png" height="450" margin-bottom: 10px; title="image of daily schedule showing future color coded timeblocks with no tasks added" alt="image of daily schedule showing future color coded timeblocks with no tasks added">
   
-  <img src="assets/images/quiz2.png" height="450" align="right" title="image of active quiz screen" alt="image of active quiz screen">
+  <img src="assets/images/schedule_active1.png" height="450" align="right" title="image of daily schedule showing previous, current, and future color coded timeblocks with tasks added" alt="image of daily schedule showing previous, current, and future color coded timeblocks with tasks added">
   </p>
 
   <p align="left">
-  <img src="assets/images/quiz3.png" height="450" style="float:left; margin-bottom: 10px;" title="image of correct quiz response" alt="image of correct quiz response">
+  <img src="assets/images/schedule_active2.png" height="450" style="float:left; margin-bottom: 10px;" title="image of daily schedule showing previous, current, and future color coded timeblocks with tasks added" alt="image of daily schedule showing previous, current, and future color coded timeblocks with tasks added">
   
-  <img src="assets/images/score1.png" height="450" align="right" title="image of quiz score screen" alt="image of quiz score screen">
-  </p>
-
-   <p align="left">
-  <img src="assets/images/game_over1.png" height="150" align="left" title="image of quiz game over" alt="image of quiz game over">
-  
-  <img src="assets/images/game_over2.png" height="100" align="right" title="image of game time expired" alt="image of game time expired">
+  <img src="assets/images/schedule_past.png" height="450" align="right" title="image of daily schedule showing previous color coded timeblocks with tasks added" alt="image of daily schedule showing previous color coded timeblocks with tasks added">
   </p>
